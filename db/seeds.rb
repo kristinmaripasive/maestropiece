@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+jessica = Artist.create({name: 'Jessica', description: 'Digital art is my passion.', photo_url:''})
