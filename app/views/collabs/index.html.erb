@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Collabs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Photo url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @collabs.each do |collab| %>
+      <tr>
+        <td><%= collab.title %></td>
+        <td><%= collab.description %></td>
+        <td><%= collab.photo_url %></td>
+        <td><%= link_to 'Show', collab %></td>
+        <td><%= link_to 'Edit', edit_collab_path(collab) %></td>
+        <td><%= link_to 'Destroy', collab, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Collab', new_collab_path %>

@@ -1,0 +1,32 @@
+<%= form_for(collab) do |f| %>
+  <% if collab.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(collab.errors.count, "error") %> prohibited this collab from being saved:</h2>
+
+      <ul>
+      <% collab.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :photo_url %>
+    <%= f.text_field :photo_url %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
