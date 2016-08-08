@@ -16,6 +16,7 @@ class CollabsController < ApplicationController
   def new
     @collab = Collab.new
     @artists = Artist.all
+    @musicians = Musician.all
   end
 
   # GET /collabs/1/edit
@@ -26,6 +27,8 @@ class CollabsController < ApplicationController
   # POST /collabs.json
   def create
     @collab = Collab.new(collab_params)
+    @artists = Artist.all
+    @musicians = Musician.all
 
     respond_to do |format|
       if @collab.save
@@ -70,6 +73,7 @@ class CollabsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def collab_params
-      params.require(:collab).permit(:title, :description, :photo_url)
+      params.require(:collab).permit(:title, :description, :photo_url, :artist_id, :musician_id)
     end
+
 end

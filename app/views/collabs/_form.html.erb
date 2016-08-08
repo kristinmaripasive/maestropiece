@@ -22,6 +22,15 @@
   </div>
 
   <div class="field">
+  <%= f.label :'Select Musician' %>
+    <select name="musician_id" id="musician_id">
+      <%= @musicians.each do |musician|  %>
+        <option value="<%= musician.id %>"><%= musician.name %></option>
+      <% end %>
+    </select>
+  </div>
+
+  <div class="field">
     <%= f.label :title %>
     <%= f.text_field :title %>
   </div>
