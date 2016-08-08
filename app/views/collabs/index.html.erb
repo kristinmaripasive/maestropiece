@@ -17,7 +17,7 @@
       <tr>
         <td><%= collab.title %></td>
         <td><%= collab.description %></td>
-        <td><%= collab.photo_url %></td>
+        <td id="wrapper"><div id="im"><img src='<%= collab.photo_url %>'/></div></td>
         <td><%= link_to 'Show', collab %></td>
         <td><%= link_to 'Edit', edit_collab_path(collab) %></td>
         <td><%= link_to 'Destroy', collab, method: :delete, data: { confirm: 'Are you sure?' } %></td>
