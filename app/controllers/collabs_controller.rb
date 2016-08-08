@@ -23,6 +23,8 @@ class CollabsController < ApplicationController
 
   # GET /collabs/1/edit
   def edit
+    @artists = Artist.all
+    @musicians = Musician.all
   end
 
   # POST /collabs
