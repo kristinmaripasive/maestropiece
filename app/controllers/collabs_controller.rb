@@ -10,6 +10,8 @@ class CollabsController < ApplicationController
   # GET /collabs/1
   # GET /collabs/1.json
   def show
+    @artists = Artist.find(@collab.artist_id)
+    @musicians = Musician.find(@collab.musician_id)
   end
 
   # GET /collabs/new
@@ -44,6 +46,7 @@ class CollabsController < ApplicationController
   # PATCH/PUT /collabs/1
   # PATCH/PUT /collabs/1.json
   def update
+
     respond_to do |format|
       if @collab.update(collab_params)
         format.html { redirect_to @collab, notice: 'Collab was successfully updated.' }
