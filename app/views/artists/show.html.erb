@@ -11,8 +11,8 @@
 </p>
 
 <p>
-  <strong>Photo url:</strong>
-  <%= @artist.photo_url %>
+  <strong>Photo:</strong>
+  <img src='<%= @artist.photo_url %>'/>
 </p>
 
 <%= link_to 'Edit', edit_artist_path(@artist) %> |
