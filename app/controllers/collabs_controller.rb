@@ -15,6 +15,7 @@ class CollabsController < ApplicationController
   # GET /collabs/new
   def new
     @collab = Collab.new
+    @artists = Artist.all
   end
 
   # GET /collabs/1/edit

@@ -4,6 +4,8 @@ class CreateCollabs < ActiveRecord::Migration[5.0]
       t.string :title
       t.text :description
       t.string :photo_url
+      t.references :artist
+      t.references :musician
 
       t.timestamps
     end

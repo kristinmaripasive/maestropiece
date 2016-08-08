@@ -11,6 +11,16 @@
     </div>
   <% end %>
 
+
+  <div class="field">
+  <%= f.label :'Select Artist' %>
+    <select name="artist_id" id="artist_id">
+      <%= @artists.each do |artist|  %>
+        <option value="<%= artist.id %>"><%= artist.name %></option>
+      <% end %>
+    </select>
+  </div>
+
   <div class="field">
     <%= f.label :title %>
     <%= f.text_field :title %>

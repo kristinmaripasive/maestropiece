@@ -27,8 +27,12 @@ ActiveRecord::Schema.define(version: 20160808010903) do
     t.string   "title"
     t.text     "description"
     t.string   "photo_url"
+    t.integer  "artist_id"
+    t.integer  "musician_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.index ["artist_id"], name: "index_collabs_on_artist_id", using: :btree
+    t.index ["musician_id"], name: "index_collabs_on_musician_id", using: :btree
   end
 
   create_table "musicians", force: :cascade do |t|

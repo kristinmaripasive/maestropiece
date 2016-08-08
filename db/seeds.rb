@@ -6,7 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 jessica = Artist.create({name: 'Jessica', description: 'Digital art is my passion.', photo_url:''})
+tyson = Artist.create({name: 'Tyson', description: 'I like to sketch', photo_url:''})
+kristin = Artist.create({name: 'Kristin', description: 'I like to paint', photo_url:''})
+
+
+
 
 ben = Musician.create({name: 'Ben', description: 'I write alternative rock.', photo_url:''})
 
-cloud = Collab.create({title: 'The Cloud', description: "This was created for Ben's new album. Jessica created this piece with illustrator.", photo_url: ''})
+cloud = Collab.create({title: 'The Cloud', description: "This was created for Ben's new album. Jessica created this piece with illustrator.", photo_url: '', artist: jessica, musician: ben})
