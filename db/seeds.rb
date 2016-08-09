@@ -10,7 +10,7 @@ melaku = Artist.create({name: 'Melaku', description: 'Digital art is my passion.
 kristin = Artist.create({name: 'Kristin', description: 'I like to paint.', photo_url:'http://i.imgur.com/QmLGjKV.jpg'})
 
 
-
+serenity = Art.create({name: 'Serenity', description: 'So peaceful.', photo_url:'', artist: melaku})
 
 
 ben = Musician.create({name: 'Ben', description: 'I write alternative rock.', photo_url:'http://i.imgur.com/cSnGVzr.jpg'})

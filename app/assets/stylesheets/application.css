@@ -50,11 +50,12 @@
    justify-content: center;
    justify-content: space-between;
    margin: 0 100px;
-   border: 1px solid blue;
+   padding: 0 20px;
+   /*border: 1px solid blue;*/
  }
 
  .list-header-container {
-   border: 1px solid red;
+   /*border: 1px solid red;*/
    width: 200px;
    height: 300px;
    text-align: center;
