@@ -1,19 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @artist.name %>
-</p>
+<div class="container">
+  <div class="header-container">
+    <p>
+      <div id="wrapper"><div id="im"><img src='<%= @artist.photo_url %>'/></div></div>
+    </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @artist.description %>
-</p>
+    <p>
+      <strong>Name:</strong>
+      <%= @artist.name %>
+    </p>
 
-<p>
-  <strong>Photo:</strong>
-  <div id="wrapper"><div id="im"><img src='<%= @artist.photo_url %>'/></div></div>
-</p>
+    <p>
+      <strong>Description:</strong>
+      <%= @artist.description %>
+    </p>
 
-<%= link_to 'Edit', edit_artist_path(@artist) %> |
-<%= link_to 'Back', artists_path %>
+    <%= link_to 'Edit', edit_artist_path(@artist) %> |
+    <%= link_to 'Back', artists_path %>
+
+    <div class="body-container">
+      <!-- insert collabed work here -->
+    </div>
+
+  </div>
+</div>
