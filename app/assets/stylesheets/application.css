@@ -24,6 +24,7 @@
    border-radius: 50%;
    display: inline-block;
    overflow: hidden;
+   margin: 10px auto;
  }
 
  #wrapper img {
@@ -54,7 +55,13 @@
 
  .list-header-container {
    border: 1px solid red;
+   width: 200px;
+   height: 300px;
    display: flex;
    flex-direction: column;
    text-align: center;
+ }
+
+ #name {
+   font-size: 20px;
  }

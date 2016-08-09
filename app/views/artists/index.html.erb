@@ -5,9 +5,9 @@
     <% @artists.each do |artist| %>
 
       <div class="list-header-container">
-        <%= artist.name %>
-        <%= artist.description %>
         <div id="wrapper"><div id="im"><img src='<%= artist.photo_url %>'/></div></div>
+        <div id="name"><%= artist.name %></div>
+        <%= artist.description %>
         <%= link_to 'Show', artist %>
         <%= link_to 'Edit', edit_artist_path(artist) %>
         <%= link_to 'Destroy', artist, method: :delete, data: { confirm: 'Are you sure?' } %>
