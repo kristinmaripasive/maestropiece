@@ -10,23 +10,26 @@ class ArtsController < ApplicationController
   # GET /arts/1
   # GET /arts/1.json
   def show
+    @artist = Artist.find(params[:artist_id])
   end
 
   # GET /arts/new
   def new
     @artist = Artist.find(params[:artist_id])
-    @art = @artist.arts.new
+    @art = Art.new
   end
 
   # GET /arts/1/edit
   def edit
+    @artist = Artist.find(params[:artist_id])
+    @art = Art.find(params[:id])
   end
 
   # POST /arts
   # POST /arts.json
   def create
     @artist = Artist.find(params[:artist_id])
-    @art = @artist.arts.new
+    @art = @artist.arts.create(art_params)
 
     respond_to do |format|
       if @art.save
