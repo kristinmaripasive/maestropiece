@@ -57,11 +57,14 @@
    border: 1px solid red;
    width: 200px;
    height: 300px;
-   display: flex;
-   flex-direction: column;
    text-align: center;
  }
 
  #name {
    font-size: 20px;
  }
+
+ #description {
+   font-size: 12px;
+   margin: 10px 0;
+   }
