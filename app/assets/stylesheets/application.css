@@ -42,3 +42,19 @@
    justify-content: center;
    text-align: center;
  }
+
+ .list-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   justify-content: space-between;
+   margin: 0 100px;
+   border: 1px solid blue;
+ }
+
+ .list-header-container {
+   border: 1px solid red;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+ }

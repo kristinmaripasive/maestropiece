@@ -1,30 +1,21 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Artists</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Photo</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+  <div class="list-container">
     <% @artists.each do |artist| %>
-      <tr>
-        <td><%= artist.name %></td>
-        <td><%= artist.description %></td>
-        <td><div id="wrapper"><div id="im"><img src='<%= artist.photo_url %>'/></div></div></td>
-        <td><%= link_to 'Show', artist %></td>
-        <td><%= link_to 'Edit', edit_artist_path(artist) %></td>
-        <td><%= link_to 'Destroy', artist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+
+      <div class="list-header-container">
+        <%= artist.name %>
+        <%= artist.description %>
+        <div id="wrapper"><div id="im"><img src='<%= artist.photo_url %>'/></div></div>
+        <%= link_to 'Show', artist %>
+        <%= link_to 'Edit', edit_artist_path(artist) %>
+        <%= link_to 'Destroy', artist, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+
     <% end %>
-  </tbody>
-</table>
+  </div>
+
 
 <br>
 
