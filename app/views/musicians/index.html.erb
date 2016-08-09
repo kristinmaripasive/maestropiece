@@ -17,7 +17,7 @@
       <tr>
         <td><%= musician.name %></td>
         <td><%= musician.description %></td>
-        <td id="wrapper"><div id="im"><img src='<%= musician.photo_url %>'/></div></td>
+        <td><div id="wrapper"><div id="im"><img src='<%= musician.photo_url %>'/></div></div></td>
         <td><%= link_to 'Show', musician %></td>
         <td><%= link_to 'Edit', edit_musician_path(musician) %></td>
         <td><%= link_to 'Destroy', musician, method: :delete, data: { confirm: 'Are you sure?' } %></td>
