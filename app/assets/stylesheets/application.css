@@ -86,3 +86,8 @@
    font-size: 12px;
    margin: 10px 0;
    }
+
+span {
+  font-size: 40px;
+  color: RGBA(140, 140, 150, 0.6);
+}
