@@ -51,7 +51,7 @@ class ArtsController < ApplicationController
     @art = Art.find(params[:id])
     respond_to do |format|
       if @art.update(art_params)
-        format.html { redirect_to @artist, notice: 'Art was successfully updated.' }
+        format.html { redirect_to artist_art_path, notice: 'Art was successfully updated.' }
         format.json { render :show, status: :ok, location: @art }
       else
         format.html { render :edit }
