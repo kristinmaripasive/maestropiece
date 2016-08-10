@@ -1,19 +1,22 @@
 <p id="notice"><%= notice %></p>
 
+<% @artist.arts.each do |art| %>
 <p>
   <strong>Name:</strong>
-  <%= @art.name %>
+  <%= art.name %>
 </p>
 
 <p>
   <strong>Description:</strong>
-  <%= @art.description %>
+  <%= art.description %>
 </p>
 
 <p>
   <strong>Photo url:</strong>
-  <%= @art.photo_url %>
+  <%= art.photo_url %>
 </p>
 
 <%= link_to 'Edit', edit_artist_art_path(@art) %> |
 <%= link_to 'Back', artist_arts_path %>
+
+<% end %>

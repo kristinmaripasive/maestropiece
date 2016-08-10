@@ -10,7 +10,8 @@ class ArtsController < ApplicationController
   # GET /arts/1
   # GET /arts/1.json
   def show
-    @artist = Artist.find(params[:artist_id])
+    @art = @art.find(params[:id])
+    @artist = @art.artist
   end
 
   # GET /arts/new
@@ -33,21 +34,24 @@ class ArtsController < ApplicationController
 
     respond_to do |format|
       if @art.save
-        format.html { redirect_to ([@artist, @art]), notice: 'Art was successfully created.' }
+        format.html { redirect_to (@artist), notice: 'Art was successfully created.' }
         format.json { render :show, status: :created, location: @art }
       else
         format.html { render :new }
         format.json { render json: @art.errors, status: :unprocessable_entity }
       end
     end
+
   end
 
   # PATCH/PUT /arts/1
   # PATCH/PUT /arts/1.json
   def update
+    @artist = Artist.find(params[:artist_id])
+    @art = Art.find(params[:id])
     respond_to do |format|
       if @art.update(art_params)
-        format.html { redirect_to @art, notice: 'Art was successfully updated.' }
+        format.html { redirect_to @artist, notice: 'Art was successfully updated.' }
         format.json { render :show, status: :ok, location: @art }
       else
         format.html { render :edit }
@@ -59,11 +63,14 @@ class ArtsController < ApplicationController
   # DELETE /arts/1
   # DELETE /arts/1.json
   def destroy
+    @artist = Artist.find(params[:artist_id])
+    @art = Art.find(params[:id])
     @art.destroy
     respond_to do |format|
-      format.html { redirect_to arts_url, notice: 'Art was successfully destroyed.' }
+      format.html { redirect_to @artist, notice: 'Art was successfully destroyed.' }
       format.json { head :no_content }
     end
+
   end
 
   private

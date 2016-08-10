@@ -10,6 +10,8 @@ class ArtistsController < ApplicationController
   # GET /artists/1
   # GET /artists/1.json
   def show
+    @artist = Artist.find(params[:artist_id])
+    @art = @artist.find(params[:id])
   end
 
   # GET /artists/new
@@ -69,6 +71,6 @@ class ArtistsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def artist_params
-      params.require(:artist).permit(:name, :description, :photo_url)
+      params.require(:artist).permit(:name, :description, :photo_url, :artist_id)
     end
 end
