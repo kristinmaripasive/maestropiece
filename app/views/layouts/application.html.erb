@@ -24,7 +24,7 @@
         <%= link_to "Sign in", new_user_session_path %>
       <% else %>
         <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-          <%= current_user.email %>
+        <div id="username"><%= current_user.email %></div>
       <% end %>
 
 
