@@ -18,7 +18,7 @@
    border: 1px solid red;
  }*/
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat+Subrayada);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
 
  #wrapper {
    width: 200px;
@@ -55,11 +55,11 @@
  .container {
    display: flex;
    justify-content: center;
-   margin-top: 70px;
+   margin-top: 100px;
  }
 
  .index-container {
-   margin-top: 100px;
+   margin-top: 150px;
  }
 
  .header-container {
@@ -122,7 +122,7 @@ nav {
   top: 0;
   left: 0;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   box-shadow: 0px 5px 10px 0px;
 }
 
@@ -131,7 +131,7 @@ nav #music-cursor:hover {
 }
 
 nav #art-cursor:hover {
-  cursor: url("http://downloads.totallyfreecursors.com/cursor_files/rainbow-ani.ani"), url("http://downloads.totallyfreecursors.com/thumbnails/rainbow-ani3.gif"), auto;
+  cursor: url("http://downloads.totallyfreecursors.com/cursor_files/hand298.ani"), url("http://downloads.totallyfreecursors.com/thumbnails/hand295.gif"), auto;
 }
 
 nav #collab-cursor:hover {
@@ -150,13 +150,7 @@ nav a {
   /*border: 1px solid green;*/
   text-align: center;
   font-size: 40px;
-  font-family: 'Montserrat Subrayada', sans-serif;
+  font-family: 'Pacifico', cursive;
   color: white;
   text-shadow: inset 3px 4px 5px #000;
-}
-
-.inset-text {
-    /* Shadows are visible under slightly transparent text color */
-    color: white;
-    text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
 }
