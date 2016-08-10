@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Artists</h1>
+<div class="index-container">
+
   <div class="list-container">
     <% @artists.each do |artist| %>
 
@@ -20,3 +21,5 @@
 <br>
 
 <%= link_to 'New Artist', new_artist_path %>
+
+</div>

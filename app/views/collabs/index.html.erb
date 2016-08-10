@@ -1,9 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Collabs</h1>
+<div class="index-container">
+
   <div class="list-container">
     <% @collabs.each do |collab| %>
-    
+
       <div class="list-header-container">
         <div id="wrapper"><div id="im"><img src='<%= collab.photo_url %>'/></div></div>
         <div id="name"><%= collab.title %></div>
@@ -20,3 +21,5 @@
 <br>
 
 <%= link_to 'New Collab', new_collab_path %>
+
+</div>
