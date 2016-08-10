@@ -34,6 +34,22 @@
    margin: 0 auto;
  }
 
+ #piece-wrapper {
+   width: 200px;
+   height: 200px;
+   border-radius: 10%;
+   display: inline-block;
+   overflow: hidden;
+   margin: 10px auto;
+ }
+
+ #piece-wrapper img {
+   max-width:105%;
+   max-height:105%;
+   background-position: left;
+   margin: 0 auto;
+ }
+
  .container {
    display: flex;
    justify-content: center;
@@ -51,14 +67,15 @@
    justify-content: space-between;
    margin: 0 100px;
    padding: 0 20px;
-   border: 1px solid blue;
+   /*border: 1px solid blue;*/
  }
 
  .list-header-container {
-   border: 1px solid red;
+   /*border: 1px solid red;*/
    width: 200px;
    height: 300px;
    text-align: center;
+   margin: 0 20px;
  }
 
  #name {
