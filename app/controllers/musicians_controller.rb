@@ -13,6 +13,7 @@ class MusiciansController < ApplicationController
     @musician = Musician.find(params[:id])
     begin
     @music = Music.find(params[:id])
+    @music = Music.new
     rescue
     end
   end
