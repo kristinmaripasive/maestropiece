@@ -10,8 +10,8 @@ class ArtsController < ApplicationController
   # GET /arts/1
   # GET /arts/1.json
   def show
-    @art = @art.find(params[:id])
-    @artist = @art.artist
+    @artist = Artist.find(params[:artist_id])
+
   end
 
   # GET /arts/new

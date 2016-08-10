@@ -18,9 +18,7 @@
         <td><%= art.name %></td>
         <td><%= art.description %></td>
         <td><%= art.photo_url %></td>
-        <td><%= link_to 'Show', artist_arts_path(@artist, @art) %></td>
-        <td><%= link_to 'Edit', edit_artist_art_path(@artist, @art) %></td>
-        <td><%= link_to 'Destroy', artist_art_path(@artist, @art) , method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
       </tr>
     <% end %>
   </tbody>

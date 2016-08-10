@@ -1,22 +1,27 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="header-container">
+    <p>
+      <div id="wrapper"><div id="im"><img src='<%= @art.photo_url %>'/></div></div>
+    </p>
 
-<% @artist.arts.each do |art| %>
-<p>
-  <strong>Name:</strong>
-  <%= art.name %>
-</p>
+    <p>
+      <strong>Title:</strong>
+      <%= @art.name %>
+    </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= art.description %>
-</p>
+    <p>
+      <strong>Description:</strong>
+      <%= @art.description %>
+    </p>
 
-<p>
-  <strong>Photo url:</strong>
-  <%= art.photo_url %>
-</p>
 
-<%= link_to 'Edit', edit_artist_art_path(@art) %> |
-<%= link_to 'Back', artist_arts_path %>
 
-<% end %>
+    <%= link_to 'Edit', edit_artist_art_path(@artist, @art) %> |
+    <%= link_to 'Back', artist_url %>
+
+    <div class="body-container">
+      <!-- insert collabed work here -->
+    </div>
+
+  </div>
+</div>
