@@ -14,5 +14,7 @@
       <%= @music.description %>
     </p>
 
+    <div id="audio"><audio controls src="<%= @music.preview_url %>"></audio></div>
+
     <%= link_to 'Edit', edit_musician_music_path(@musician, @music) %> |
     <%= link_to 'Back', @musician %>

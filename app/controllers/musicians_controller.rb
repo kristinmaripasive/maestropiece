@@ -11,6 +11,7 @@ class MusiciansController < ApplicationController
   # GET /musicians/1.json
   def show
     @musician = Musician.find(params[:id])
+    @music = Music.find(params[:id])
   end
 
   # GET /musicians/new

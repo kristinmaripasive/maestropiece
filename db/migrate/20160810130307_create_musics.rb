@@ -4,6 +4,7 @@ class CreateMusics < ActiveRecord::Migration[5.0]
       t.string :name
       t.text :description
       t.string :photo_url
+      t.string :preview_url
       t.references :musician
 
       t.timestamps

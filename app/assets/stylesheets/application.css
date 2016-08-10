@@ -78,6 +78,14 @@
    margin: 0 20px;
  }
 
+ .music-list-header-container {
+   /*border: 1px solid red;*/
+   width: 300px;
+   height: 300px;
+   text-align: center;
+   margin: 0 20px;
+ }
+
  #name {
    font-size: 20px;
  }
@@ -90,4 +98,11 @@
 span {
   font-size: 40px;
   color: RGBA(140, 140, 150, 0.6);
+}
+
+.music-list-header-container #audio, #audio {
+  /*border: 1px solid green;*/
+  width: 300px;
+  margin: 10px auto 40px auto;
+  box-shadow: 5px 5px 5px 0px;
 }

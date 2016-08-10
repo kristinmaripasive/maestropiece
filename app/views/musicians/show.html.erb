@@ -28,8 +28,9 @@
     <!-- THESE ARE THE MUSIC PIECES -->
     <div class="list-container">
       <% @musician.musics.each do |music| %>
-      <div class="list-header-container">
+      <div class="music-list-header-container">
         <div id="piece-wrapper"><div id="im"><img src='<%= music.photo_url %>'/></div></div>
+        <div id="audio"><audio controls src="<%= @music.preview_url %>"></audio></div>
         <div id="name"><%= music.name %></div>
         <div id="description"><%= music.description %></div>
         <%= link_to 'Show', musician_music_path(@musician, music) %>

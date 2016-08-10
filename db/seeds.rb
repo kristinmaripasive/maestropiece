@@ -26,9 +26,12 @@ life = Art.create({name: 'Life', description: "There's something out there. This
 wilderness = Art.create({name: 'Wilderness', description: 'Not all who wander are lost. This piece was inspired by a friend full of mystery and depth.', photo_url:'http://i.imgur.com/yoYpV1z.jpg?1', artist: kristin})
 
 # Musicians
-Rashad = Musician.create({name: 'Rashad', description: "Rappin' the trappin'", photo_url:'http://i.imgur.com/7HorrIW.jpg'})
+rashad = Musician.create({name: 'Rashad', description: "Rappin' the trappin'", photo_url:'http://i.imgur.com/7HorrIW.jpg'})
 ben = Musician.create({name: 'Ben', description: 'I write alternative rock.', photo_url:'http://i.imgur.com/cSnGVzr.jpg'})
 tyson = Musician.create({name: 'Tyson', description: 'I like to play the piano.', photo_url:'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkXAAAAJDVlOTRhZTE1LWRhMzctNGE5My1iMzJjLTViOTE4MTkzY2E2Yg.jpg'})
+
+# Music pieces
+atm = Music.create({name: 'ATM (Prod. Pentagrvm)', description: 'Features: @kamiyada, @SlimVicious, @Nyronthehonest. Producers: @pentagrvm, @the-virus-uk, @khalil-byous, @jcardenas96, @davelength, @yungsvge, @justmeek, @innerheem', photo_url:'https://i1.sndcdn.com/artworks-000174099349-80f6yw-t500x500.jpg', preview_url: 'http://a1748.phobos.apple.com/us/r1000/074/Music/d4/97/e7/mzm.bigdtgoz.aac.p.m4a', musician: rashad})
 
 # Collabs
 cloud = Collab.create({title: 'The Cloud', description: "This was created for Ben's new album. Jessica created this piece with illustrator.", photo_url: 'http://i.imgur.com/UxzRgNZ.jpg', artist: jessica, musician: ben})

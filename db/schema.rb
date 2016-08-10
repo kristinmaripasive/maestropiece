@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 20160810130307) do
     t.string   "name"
     t.text     "description"
     t.string   "photo_url"
+    t.string   "preview_url"
     t.integer  "musician_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
