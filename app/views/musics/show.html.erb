@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="header-container">
+    <p>
+      <div id="wrapper"><div id="im"><img src='<%= @music.photo_url %>'/></div></div>
+    </p>
+
+    <p>
+      <strong>Title:</strong>
+      <%= @music.name %>
+    </p>
+
+    <p>
+      <strong>Description:</strong>
+      <%= @music.description %>
+    </p>
+
+    <%= link_to 'Edit', edit_musician_music_path(@musician, @music) %> |
+    <%= link_to 'Back', @musician %>

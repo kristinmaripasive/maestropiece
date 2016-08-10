@@ -11,7 +11,6 @@ class ArtsController < ApplicationController
   # GET /arts/1.json
   def show
     @artist = Artist.find(params[:artist_id])
-
   end
 
   # GET /arts/new
@@ -41,7 +40,6 @@ class ArtsController < ApplicationController
         format.json { render json: @art.errors, status: :unprocessable_entity }
       end
     end
-
   end
 
   # PATCH/PUT /arts/1
@@ -70,7 +68,6 @@ class ArtsController < ApplicationController
       format.html { redirect_to @artist, notice: 'Art was successfully destroyed.' }
       format.json { head :no_content }
     end
-
   end
 
   private
