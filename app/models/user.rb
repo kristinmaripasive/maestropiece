@@ -3,7 +3,8 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
 
   attr_accessor :artist_box
-  validates :artist_box, acceptance: true
+
+  attr_accessor :music_box
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
