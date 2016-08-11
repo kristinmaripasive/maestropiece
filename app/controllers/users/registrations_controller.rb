@@ -2,6 +2,18 @@ class Users::RegistrationsController < Devise::RegistrationsController
 # before_action :configure_sign_up_params, only: [:create]
 # before_action :configure_account_update_params, only: [:update]
 
+def update
+  set_flash_message :notice, :"message here" if is_flashing_format?
+  session[:user_return_to] = url
+  super
+end
+
+protected
+
+def after_update_path_for(resource)
+  user_path(resource)
+end
+
   # GET /resource/sign_up
   # def new
   #   super
