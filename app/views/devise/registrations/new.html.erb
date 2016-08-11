@@ -22,6 +22,14 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
+Choose one: <br />
+<!-- I don't know how to write this if statement... -->
+
+<div class="field">
+  <%= f.check_box :artist_box %> Artist
+</div>
+
+<!-- Then when user submits they get redirected to artist new form -->
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>

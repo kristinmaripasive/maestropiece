@@ -31,7 +31,7 @@ ben = Musician.create({name: 'Ben', description: 'I write alternative rock.', ph
 tyson = Musician.create({name: 'Tyson', description: 'I like to play the piano.', photo_url:'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkXAAAAJDVlOTRhZTE1LWRhMzctNGE5My1iMzJjLTViOTE4MTkzY2E2Yg.jpg'})
 
 # Music pieces
-atm = Music.create({name: 'ATM (Prod. Pentagrvm)', description: 'Features: @kamiyada, @SlimVicious, @Nyronthehonest. Producers: @pentagrvm, @the-virus-uk, @khalil-byous, @jcardenas96, @davelength, @yungsvge, @justmeek, @innerheem', photo_url:'https://i1.sndcdn.com/artworks-000174099349-80f6yw-t500x500.jpg', preview_url: 'http://a1748.phobos.apple.com/us/r1000/074/Music/d4/97/e7/mzm.bigdtgoz.aac.p.m4a', musician: rashad})
+atm = Music.create({name: 'ATM (Prod. Pentagrvm)', description: 'Features: @kamiyada, @SlimVicious, @Nyronthehonest. Producers: @pentagrvm, @the-virus-uk, @khalil-byous, @jcardenas96, @davelength, @yungsvge, @justmeek, @innerheem', photo_url:'https://i1.sndcdn.com/artworks-000174099349-80f6yw-t500x500.jpg', preview_url: '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/276122423&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>', musician: rashad})
 
 # Collabs
 cloud = Collab.create({title: 'The Cloud', description: "This was created for Ben's new album. Jessica created this piece with illustrator.", photo_url: 'http://i.imgur.com/UxzRgNZ.jpg', artist: jessica, musician: ben})
