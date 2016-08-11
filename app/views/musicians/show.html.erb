@@ -30,7 +30,6 @@
       <% @musician.musics.each do |music| %>
       <div class="music-list-header-container">
         <div id="piece-wrapper"><div id="im"><img src='<%= music.photo_url %>'/></div></div>
-        <%= @music.preview_url.to_s.html_safe %>
         <div id="name"><%= music.name %></div>
         <div id="description"><%= music.description %></div>
         <%= link_to 'Show', musician_music_path(@musician, music) %>
