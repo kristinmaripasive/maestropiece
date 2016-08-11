@@ -3,7 +3,11 @@ Rails.application.routes.draw do
   root to: "main#index"
     resources :main, only: [:index, :show]
 
-  devise_for :users
+    devise_for :users, controllers: {
+         sessions: 'users/sessions',
+         registrations: 'users/registrations'
+       }
+
   resources :artists do
     resources :arts
   end
