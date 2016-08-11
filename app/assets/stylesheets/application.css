@@ -161,14 +161,13 @@ nav a {
 #maestropiece {
   flex-grow: 10;
   /*border: 1px solid green;*/
-  margin-left: 0px;
-  margin-right: 120px;
+  margin-right: 90px;
   text-align: center;
   font-size: 40px;
   font-family: 'Pacifico', cursive;
   color: white;
   text-shadow: inset 3px 4px 5px #000;
-  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 #p {
