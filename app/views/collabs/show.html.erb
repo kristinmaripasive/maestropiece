@@ -18,8 +18,8 @@
 
     <p>
       <strong>Contributors:</strong>
-      <%= link_to @artists.name, artist_path %> and
-      <%= link_to @musicians.name, musician_path %>
+      <%= link_to @artists.name, @artists %> and
+      <%= link_to @musicians.name, @musicians %>
     </p>
 
     <%= link_to 'Edit', edit_collab_path(@collab) %> |
