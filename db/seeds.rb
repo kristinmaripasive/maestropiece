@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Artist.destroy_all
+Musician.destroy_all
+Collab.destroy_all
 
 # Artists
 jessica = Artist.create({name: 'Jessica', description: 'All about photography.', photo_url:'http://i.imgur.com/Ioj3BZf.jpg'})
