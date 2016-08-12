@@ -175,6 +175,7 @@ nav a {
 
 
 .main-background {
+  margin-top: 80px;
   position: absolute;
   position: fixed;
   top: 0;
