@@ -127,16 +127,19 @@ nav {
   /*border: 1px solid red;*/
 }
 
-nav #music-cursor:hover {
+#music-cursor:hover {
   cursor: url("http://downloads.totallyfreecursors.com/cursor_files/pianokeys.cur"), url("http://downloads.totallyfreecursors.com/thumbnails/piano-keys-11.gif"), auto;
+  text-decoration: none;
 }
 
-nav #art-cursor:hover {
+#art-cursor:hover {
   cursor: url("http://downloads.totallyfreecursors.com/cursor_files/hand298.ani"), url("http://downloads.totallyfreecursors.com/thumbnails/hand295.gif"), auto;
+  text-decoration: none;
 }
 
-nav #collab-cursor:hover {
+#collab-cursor:hover {
   cursor: url("http://downloads.totallyfreecursors.com/cursor_files/hand130.ani"), url("http://downloads.totallyfreecursors.com/thumbnails/hand127.gif"), auto;
+  text-decoration: none;
 }
 
 nav a {
@@ -170,21 +173,6 @@ nav a {
   padding-bottom: 10px;
 }
 
-#p {
-  color: #A2ABFE;
-}
-#i {
-  color: #AAFF91;
-}
-#e {
-  color: #F5FF97;
-}
-#c {
-  color: #FFC780;
-}
-#ee {
-  color: #F39998;
-}
 
 .main-background {
   position: absolute;
@@ -193,4 +181,8 @@ nav a {
   left: 0;
   z-index: -1;
   overflow: hidden;
+}
+
+.middle {
+  font-size: 40px;
 }
