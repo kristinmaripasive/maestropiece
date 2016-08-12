@@ -7,13 +7,15 @@
     </p>
 
     <p>
-      <strong>Name:</strong>
+      <div id="name">
       <%= @artist.name %>
+      </div>
     </p>
 
     <p>
-      <strong>Description:</strong>
+      <div id="description">
       <%= @artist.description %>
+      </div>
     </p>
 
     <%= link_to 'Edit', edit_artist_path(@artist) %> |

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root to: "main#index"
+  root to: "main#show"
     resources :main, only: [:index, :show]
 
   devise_for :users
