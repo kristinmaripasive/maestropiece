@@ -32,10 +32,16 @@
     <div class="list-container">
       <% @artist.arts.each do |art| %>
       <div class="list-header-container">
-        <div id="piece-wrapper"><div id="im"><img src='<%= art.photo_url %>'/></div></div>
+
+
+        <%= link_to artist_art_path(@artist, art) do %>
+          <div id="piece-wrapper"><div id="im"><img src='<%= art.photo_url %>'/></div></div>
+        <% end %>
+
+
         <div id="name"><%= art.name %></div>
         <div id="description"><%= art.description %></div>
-        <%= link_to 'Show', artist_art_path(@artist, art) %>
+
         <%= link_to 'Edit', edit_artist_art_path(@artist, art) %>
         <%= link_to 'Destroy', artist_art_path(@artist, art), method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
